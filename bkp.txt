@@ -1,10 +1,10 @@
 {
-  "type": "mysql",
-  "host": "213.190.6.64",
-  "port": 3306,
-  "username": "u934998642_junior",
-  "password": "thmpv77d",
-  "database": "u934998642_bancoteste",
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "docker",
+  "database": "app",
   "synchronize": true,
   "logging": false,
   "entities": [

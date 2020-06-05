@@ -1,6 +1,6 @@
 import express, { Router } from 'express';
 
-import { create, index } from '../controllers/ReceiptController';
+import { index, create } from '../controllers/CrmsController';
 // import authMiddleware from '../middlewares/auth';
 
 
@@ -10,6 +10,6 @@ const routes = Router();
 // routes.use(authMiddleware);
 
 routes.get('/list', index);
-routes.post('/new', create);
+routes.post('/add', create )
 
 export default routes;
