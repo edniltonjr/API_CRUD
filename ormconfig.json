@@ -7,16 +7,18 @@
   "database": "u934998642_bancoteste",
   "synchronize": true,
   "logging": false,
-  "entities": ["../**/*.entity.{ts,js}"],
+  "entities": [
+    "./dist/src/models/**{.ts,.js}"
+  ],
   "migrations": [
-     "./src/database/migrations/*.ts"
+     "./dist/src/database/migrations/*.js"
   ],
   "subscribers": [
-     "src/subscriber/*.ts"
+     "./dist/src/subscriber/*.js"
   ],
   "cli": {
-     "entitiesDir": "src/models",
-     "migrationsDir": "src/database/migrations",
-     "subscribersDir": "src/subscriber"
+    "entitiesDir": "./dist/src/models",
+    "migrationsDir": "./dist/database/migrations"
+
   }
 }

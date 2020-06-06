@@ -20,5 +20,8 @@ app.use('/crms', crmsRoutes);
 app.use('/user', userRoutes);
 app.use('/receipt', receiptRoutes);
 
-app.listen(port, () => console.log(`Server Started on ${port}`));
+app.listen(process.env.PORT || 3001, () => {
+
+    console.log(`Server Started on ${port} `);
+});
 
