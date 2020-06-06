@@ -19,7 +19,7 @@ app.use('/crms', crmsRoutes);
 app.use('/user', userRoutes);
 app.use('/receipt', receiptRoutes);
 
-app.listen(3336, () => {
-    console.log('Server Started on Port 3333!');
+app.listen(3000, () => {
+    console.log('Server Started on Port 3000!');
 });
 
