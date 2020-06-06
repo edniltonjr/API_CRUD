@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var CrmsController_1 = require("../controllers/CrmsController");
+// import authMiddleware from '../middlewares/auth';
+var routes = express_1.Router();
+// routes.use(authMiddleware);
+routes.get('/list', CrmsController_1.index);
+routes.post('/add', CrmsController_1.create);
+exports.default = routes;
