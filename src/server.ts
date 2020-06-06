@@ -19,7 +19,7 @@ app.use('/crms', crmsRoutes);
 app.use('/user', userRoutes);
 app.use('/receipt', receiptRoutes);
 
-app.listen(process.env.PORT || 5000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log('Server Started on Port 3000!');
 });
 
