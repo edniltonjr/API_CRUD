@@ -1,6 +1,6 @@
-import {MigrationInterface, QueryRunner, Table} from "typeorm";
+import {MigrationInterface, Table, QueryRunner} from "typeorm";
 
-export class Crms1591352028621 implements MigrationInterface {
+export class Crms1591412146944 implements MigrationInterface {
 
     public async up(queryRunner: QueryRunner): Promise<void> {
       await queryRunner.createTable(
@@ -252,10 +252,10 @@ export class Crms1591352028621 implements MigrationInterface {
             },
           ],
         })
-      );
-    }
+        );
+        }
 
-    public async down(queryRunner: QueryRunner): Promise<void> {
-      await queryRunner.dropTable('crms');
-    }
-  }
+        public async down(queryRunner: QueryRunner): Promise<void> {
+          await queryRunner.dropTable('crms');
+        }
+        }

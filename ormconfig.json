@@ -7,9 +7,7 @@
   "database": "u934998642_bancoteste",
   "synchronize": true,
   "logging": false,
-  "entities": [
-     "src/models/**/*.ts"
-  ],
+  "entities": ["../**/*.entity.{ts,js}"],
   "migrations": [
      "./src/database/migrations/*.ts"
   ],
